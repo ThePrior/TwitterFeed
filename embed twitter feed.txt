@@ -1,0 +1,18 @@
+https://sharepointmaven.com/add-twitter-feed-sharepoint-site/
+
+----------------
+how to make sure the actual tweets show up
+https://www.koskila.net/how-to-fix-twitter-embed-in-sharepoint/
+
+-----------------
+https://social.technet.microsoft.com/Forums/en-US/8f516e99-ef8d-4dd5-a31d-957a2c5390c4/sp-2013-page-with-a-twitter-web-part-the-feed-is-not-rendering-on-ie110-but-shows-on-chrome-and?forum=sharepointgeneral
+
+I've just tested the latest Twitter widget in three SharePoint environments. It does not work unless we use <meta http-equiv="X-UA-Compatible" content="IE=edge"> in the header:
+
+All tests were done with IE11:
+•SharePoint 2013 - Does not work <meta http-equiv="X-UA-Compatible" content="IE=10">
+•SharePoint 2016 - Does not work <meta http-equiv="X-UA-Compatible" content="IE=10">
+•SharePoint Online - Works.  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+-------------------
+
+https://twittercommunity.com/t/embedded-timeline-not-rendering-in-internet-explorer/105355/14
